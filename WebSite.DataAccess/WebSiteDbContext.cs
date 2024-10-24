@@ -11,7 +11,7 @@ namespace WebSite.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=MENGUALP; Database=ahmetsel_; Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Server=MSSQLSERVER2019; Database=MyInfoDb; uid=ahmetselimdb; pwd=Tgmg37?48;");
         }
 
         public DbSet<MyInfo> MyInfos { get; set; }
