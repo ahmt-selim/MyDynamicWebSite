@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.35325.158
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Entities", "WebSite.Entities\WebSite.Entities.csproj", "{09CCCE14-4C67-4C5F-BB5F-D0A8F9712AB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSite.Entities", "WebSite.Entities\WebSite.Entities.csproj", "{09CCCE14-4C67-4C5F-BB5F-D0A8F9712AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.DataAccess", "WebSite.DataAccess\WebSite.DataAccess.csproj", "{CA73AAD4-7D58-49AE-96D1-09B421BF8444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSite.DataAccess", "WebSite.DataAccess\WebSite.DataAccess.csproj", "{CA73AAD4-7D58-49AE-96D1-09B421BF8444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.Business", "WebSite.Business\WebSite.Business.csproj", "{C651F9CB-5BAC-47DB-8AE9-E547CBAA25C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSite.Business", "WebSite.Business\WebSite.Business.csproj", "{C651F9CB-5BAC-47DB-8AE9-E547CBAA25C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.API", "WebSite.API\WebSite.API.csproj", "{D9025967-4AFD-49BB-9848-99D3DC5BE6F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSite.API", "WebSite.API\WebSite.API.csproj", "{D9025967-4AFD-49BB-9848-99D3DC5BE6F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSite.UI", "WebSite.UI\WebSite.UI.csproj", "{903C9920-4378-47EB-BC9F-16BCE87AD09D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D9025967-4AFD-49BB-9848-99D3DC5BE6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9025967-4AFD-49BB-9848-99D3DC5BE6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9025967-4AFD-49BB-9848-99D3DC5BE6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903C9920-4378-47EB-BC9F-16BCE87AD09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903C9920-4378-47EB-BC9F-16BCE87AD09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903C9920-4378-47EB-BC9F-16BCE87AD09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903C9920-4378-47EB-BC9F-16BCE87AD09D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
