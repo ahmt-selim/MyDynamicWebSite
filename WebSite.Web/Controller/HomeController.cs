@@ -16,6 +16,8 @@ namespace WebSite.Web.Controllers
             JObject result = new JObject();
             var myinfo = new myinfo();
             myinfo.name = "Ahmet Selim";
+            myinfo.surname = "Kısa";
+            myinfo.birthDay = DateTime.Today;
             //using (HttpClient client = new HttpClient())
             //{
             //    try
