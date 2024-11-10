@@ -5,7 +5,7 @@ using WebSite.Entities;
 
 namespace WebSite.Business.Abstract
 {
-    public interface IWebSiteService
+    public interface IMyInfoService
     {
         List<MyInfo> GetAllMyInfos();
         MyInfo GetMyInfoById(int id);

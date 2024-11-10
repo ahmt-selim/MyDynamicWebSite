@@ -5,7 +5,7 @@ using WebSite.Entities;
 
 namespace WebSite.DataAccess.Abstract
 {
-    public interface IWebSiteRepository
+    public interface IMyInfoRepository
     {
         List<MyInfo> GetAllMyInfos();
         MyInfo GetMyInfoById(int id);

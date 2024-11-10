@@ -20,12 +20,12 @@ namespace WebSite.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=.\\MSSQLSERVER2019; Database=MyInfoDb; uid=ahmetselimdb; pwd=paJGtUtr11irk5*?;");
-            //optionsBuilder.UseSqlServer("Server=MENGUALP; Database=MyInfoDb; Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer("Server=.\\MSSQLSERVER2019; Database=MyInfoDb; uid=ahmetselimdb; pwd=paJGtUtr11irk5*?;");
+            optionsBuilder.UseSqlServer("Server=MENGUALP; Database=MyInfoDb; Trusted_Connection=True;");
         }
 
         public DbSet<MyInfo> MyInfos { get; set; }
-        public DbSet<MyCompetence> MyCompetences { get; set; }
+        public DbSet<MySkill> MySkills { get; set; }
         public DbSet<MyEducationInfo> MyEducationInfos { get; set; }
         public DbSet<MyHobi> MyHobies { get; set; }
 

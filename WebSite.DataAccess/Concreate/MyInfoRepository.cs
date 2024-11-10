@@ -7,7 +7,7 @@ using WebSite.Entities;
 
 namespace WebSite.DataAccess.Concreate
 {
-    public class WebSiteRepository : IWebSiteRepository
+    public class MyInfoRepository : IMyInfoRepository
     {
         public MyInfo CreateMyInfo(MyInfo myinfo)
         {

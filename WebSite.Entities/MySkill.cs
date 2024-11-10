@@ -6,7 +6,7 @@ using System.Text;
 
 namespace WebSite.Entities
 {
-    public class MyCompetence
+    public class MySkill
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }

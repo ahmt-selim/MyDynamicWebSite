@@ -8,40 +8,40 @@ using WebSite.Entities;
 
 namespace WebSite.Business.Concreate
 {
-    public class WebSiteManager : IWebSiteService
+    public class MyInfoManager : IMyInfoService
     {
-        private IWebSiteRepository _webSiteRepository;
-        public WebSiteManager()
+        private IMyInfoRepository _myInfoRepository;
+        public MyInfoManager()
         {
-            _webSiteRepository = new WebSiteRepository();
+            _myInfoRepository = new MyInfoRepository();
         }
         public MyInfo CreateMyInfo(MyInfo myinfo)
         {
-            return _webSiteRepository.CreateMyInfo(myinfo);
+            return _myInfoRepository.CreateMyInfo(myinfo);
         }
 
         public void DeleteMyInfo(int id)
         {
-            _webSiteRepository.DeleteMyInfo(id);
+            _myInfoRepository.DeleteMyInfo(id);
         }
 
         public List<MyInfo> GetAllMyInfos()
         {
-            return _webSiteRepository.GetAllMyInfos();
+            return _myInfoRepository.GetAllMyInfos();
         }
 
         public MyInfo GetMyInfoById(int id)
         {
             if (id > 0)
             {
-                return _webSiteRepository.GetMyInfoById(id);
+                return _myInfoRepository.GetMyInfoById(id);
             }
             throw new Exception("id can not be less than 1");
         }
 
         public MyInfo UpdateMyInfo(MyInfo myinfo)
         {
-            return _webSiteRepository.UpdateMyInfo(myinfo);
+            return _myInfoRepository.UpdateMyInfo(myinfo);
         }
     }
 }

@@ -12,37 +12,37 @@ namespace WebSite.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WebSiteController : ControllerBase
+    public class MyInfoController : ControllerBase
     {
-        private IWebSiteService _webSiteService;
-        public WebSiteController()
+        private IMyInfoService _myInfoService;
+        public MyInfoController()
         {
-            _webSiteService = new WebSiteManager();
+            _myInfoService = new MyInfoManager();
         }
         [HttpGet]
         public List<MyInfo> Get()
         {
-            return _webSiteService.GetAllMyInfos();
+            return _myInfoService.GetAllMyInfos();
         }
         [HttpGet("{id}")]
         public MyInfo Get(int id)
         {
-            return _webSiteService.GetMyInfoById(id);
+            return _myInfoService.GetMyInfoById(id);
         }
         [HttpPost]
         public MyInfo Post([FromBody]MyInfo myinfo)
         {
-            return _webSiteService.CreateMyInfo(myinfo);
+            return _myInfoService.CreateMyInfo(myinfo);
         }
         [HttpPut]
         public MyInfo Put([FromBody] MyInfo myinfo)
         {
-            return _webSiteService.UpdateMyInfo(myinfo);
+            return _myInfoService.UpdateMyInfo(myinfo);
         }
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _webSiteService.DeleteMyInfo(id);
+            _myInfoService.DeleteMyInfo(id);
         }
     }
 }
