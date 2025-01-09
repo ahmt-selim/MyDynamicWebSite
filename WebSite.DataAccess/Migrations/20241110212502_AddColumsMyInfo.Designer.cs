@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebSite.DataAccess;
 
 namespace WebSite.DataAccess.Migrations
 {
     [DbContext(typeof(WebSiteDbContext))]
-    partial class WebSiteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241110212502_AddColumsMyInfo")]
+    partial class AddColumsMyInfo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,9 +27,6 @@ namespace WebSite.DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("MyInfoId")
-                        .HasColumnType("int");
 
                     b.Property<string>("schoolName")
                         .HasColumnType("nvarchar(225)")
@@ -86,30 +85,12 @@ namespace WebSite.DataAccess.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("telephone")
+                    b.Property<string>("telnumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 
                     b.ToTable("MyInfos");
-                });
-
-            modelBuilder.Entity("WebSite.Entities.MyInfoSkills", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("MyInfoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SkillId")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.ToTable("MyInfoSkills");
                 });
 
             modelBuilder.Entity("WebSite.Entities.MySkill", b =>

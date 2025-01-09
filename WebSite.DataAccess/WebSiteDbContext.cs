@@ -28,6 +28,7 @@ namespace WebSite.DataAccess
         public DbSet<MySkill> MySkills { get; set; }
         public DbSet<MyEducationInfo> MyEducationInfos { get; set; }
         public DbSet<MyHobi> MyHobies { get; set; }
+        public DbSet<MyInfoSkills> MyInfoSkills { get; set; }
 
     }
 }

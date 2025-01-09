@@ -22,5 +22,8 @@ namespace WebSite.Entities
 
         [Column(TypeName = "date")]
         public DateTime birthDay { get; set; }
+        public string email { get; set; }
+        public string telephone { get; set; }
+        public string about { get; set; }
     }
 }

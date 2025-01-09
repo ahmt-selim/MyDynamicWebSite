@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebSite.DataAccess;
+using WebSite.DataAccess.Data;
 
 namespace WebSite.API
 {
@@ -37,6 +38,7 @@ namespace WebSite.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                DataSeeding.Seed(app);
             }
             else
             {
