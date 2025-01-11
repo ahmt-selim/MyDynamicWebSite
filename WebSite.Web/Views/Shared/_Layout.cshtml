@@ -1,4 +1,4 @@
-﻿@model WebSite.Web.Model.myinfo;
+﻿@model WebSite.Web.Model.IndexPageViewModel;
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="">
-    <meta name="author" content="@Model.name">
+    <meta name="author" content="@Model.myInfo.name">
 
-    <title>@Model.name @Model.surname</title>
+    <title>@Model.myInfo.name @Model.myInfo.surname</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

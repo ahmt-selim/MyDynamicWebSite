@@ -13,35 +13,35 @@ namespace WebSite.API.Controllers
     [ApiController]
     public class MyInfoSkillsController : Controller
     {
-        private IMySkillService _mySkillService;
+        private IMyInfoSkillsService _myInfoSkillsService;
         public MyInfoSkillsController()
         {
-            _mySkillService = new MySkillManager();
+            _myInfoSkillsService = new MyInfoSkillsManager();
         }
         [HttpGet]
-        public List<MySkill> Get()
+        public List<MyInfoSkills> Get()
         {
-            return _mySkillService.GetAllMySkills();
+            return _myInfoSkillsService.GetAllMyInfoSkills();
         }
         [HttpGet("{id}")]
-        public MySkill Get(int id)
+        public List<MyInfoSkills> Get(int id)
         {
-            return _mySkillService.GetMySkillById(id);
+            return _myInfoSkillsService.GetMyInfoSkillsById(id);
         }
         [HttpPost]
-        public List<MySkill> Post([FromBody] List<MySkill> myskills)
+        public List<MyInfoSkills> Post([FromBody] List<MyInfoSkills> myInfoSkills)
         {
-            return _mySkillService.CreateMySkill(myskills);
+            return _myInfoSkillsService.CreateMyInfoSkills(myInfoSkills);
         }
         [HttpPut]
-        public MySkill Put([FromBody] MySkill myskill)
+        public MyInfoSkills Put([FromBody] MyInfoSkills myInfoSkills)
         {
-            return _mySkillService.UpdateMySkill(myskill);
+            return _myInfoSkillsService.UpdateMyInfoSkills(myInfoSkills);
         }
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _mySkillService.DeleteMySkill(id);
+            _myInfoSkillsService.DeleteMyInfoSkills(id);
         }
     }
 }

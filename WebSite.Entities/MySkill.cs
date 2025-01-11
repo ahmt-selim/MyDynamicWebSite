@@ -13,5 +13,6 @@ namespace WebSite.Entities
 
         [StringLength(225)]
         public string name { get; set; }
+        public string picture_name { get; set; }
     }
 }

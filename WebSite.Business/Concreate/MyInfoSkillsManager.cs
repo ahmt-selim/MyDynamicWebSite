@@ -10,38 +10,38 @@ namespace WebSite.Business.Concreate
 {
     public class MyInfoSkillsManager : IMyInfoSkillsService
     {
-        private IMySkillRepository _mySkillRepository;
+        private IMyInfoSkillsRepository _myInfoSkillsRepository;
         public MyInfoSkillsManager()
         {
-            _mySkillRepository = new MySkillRepository();
+            _myInfoSkillsRepository = new MyInfoSkillsRepository();
         }
-        public List<MySkill> CreateMySkill(List<MySkill> myskills)
+        public List<MyInfoSkills> CreateMyInfoSkills(List<MyInfoSkills> myInfoSkills)
         {
-            return _mySkillRepository.CreateMySkill(myskills);
+            return _myInfoSkillsRepository.CreateMyInfoSkills(myInfoSkills);
         }
 
-        public void DeleteMySkill(int id)
+        public void DeleteMyInfoSkills(int id)
         {
-            _mySkillRepository.DeleteMySkill(id);
+            _myInfoSkillsRepository.DeleteMyInfoSkills(id);
         }
 
-        public List<MySkill> GetAllMySkills()
+        public List<MyInfoSkills> GetAllMyInfoSkills()
         {
-            return _mySkillRepository.GetAllMySkills();
+            return _myInfoSkillsRepository.GetAllMyInfoSkills();
         }
 
-        public MySkill GetMySkillById(int id)
+        public List<MyInfoSkills> GetMyInfoSkillsById(int id)
         {
             if (id > 0)
             {
-                return _mySkillRepository.GetMySkillById(id);
+                return _myInfoSkillsRepository.GetMyInfoSkillsById(id);
             }
             throw new Exception("id can not be less than 1");
         }
 
-        public MySkill UpdateMySkill(MySkill myskill)
+        public MyInfoSkills UpdateMyInfoSkills(MyInfoSkills myInfoSkills)
         {
-            return _mySkillRepository.UpdateMySkill(myskill);
+            return _myInfoSkillsRepository.UpdateMyInfoSkills(myInfoSkills);
         }
     }
 }

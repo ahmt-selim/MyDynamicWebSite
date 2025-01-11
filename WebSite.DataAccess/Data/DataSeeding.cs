@@ -20,13 +20,14 @@ namespace WebSite.DataAccess.Data
 
             var skills = new List<MySkill>()
                     {
-                        new MySkill {name="C#"},
-                        new MySkill {name="Javascript"},
-                        new MySkill {name="Sql"},
-                        new MySkill {name="Python"},
-                        new MySkill {name="C++"},
-                        new MySkill {name="Html"},
-                        new MySkill {name="Css"}
+                        new MySkill {name="C#",picture_name="csharp"},
+                        new MySkill {name="Javascript", picture_name="js"},
+                        new MySkill {name="Sql Lite",picture_name="sqllite"},
+                        new MySkill {name="Python",picture_name="python"},
+                        new MySkill {name="C++",picture_name="cpp"},
+                        new MySkill {name="Html",picture_name="html"},
+                        new MySkill {name="Css",picture_name="css"},
+                        new MySkill {name=".Net",picture_name="dotnet"}
                     };
             
 
