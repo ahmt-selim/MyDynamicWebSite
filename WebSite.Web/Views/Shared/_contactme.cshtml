@@ -31,7 +31,7 @@
                     <ul class="social-icon">
                         <li class="social-icon-item"><a href="https://x.com/ahmt_selim12" class="social-icon-link bi-twitter"></a></li>
                         <li class="social-icon-item"><a href="https://www.instagram.com/ahmt_selim/" class="social-icon-link bi-instagram"></a></li>
-                        <li class="social-icon-item"><a href="https://www.youtube.com/templatemo" class="social-icon-link bi-youtube"></a></li>
+                        <li class="social-icon-item"><a href="https://www.youtube.com/@@ahmetselimksa749" class="social-icon-link bi-youtube"></a></li>
                         <li class="social-icon-item"><a href="https://github.com/ahmt-selim" class="social-icon-link bi-github"></a></li>
 
                     </ul>
@@ -47,22 +47,24 @@
                     <strong class="site-footer-title d-block mb-3">About</strong>
 
                     <p class="mb-2">
-                        Joshua is a professional web developer. Feel free to get in touch with me.
+                        @Model.myInfo.about.Split(". ")[0]
                     </p>
 
                     <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
 
                     <p>
-                        <a href="mailto:hello@josh.design">
-                            hello@josh.design
+                        <a href="mailto:@Model.myInfo.email"
+                           style="@(Model.myInfo.email.Length > 30 ? "font-size:15px;" : "font-size:inherit;")">
+                            @Model.myInfo.email
                         </a>
+
                     </p>
 
                     <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
 
                     <p class="mb-0">
                         <a href="tel: 120-240-9600">
-                            120-240-9600
+                            @Model.myInfo.telephone
                         </a>
                     </p>
                 </div>

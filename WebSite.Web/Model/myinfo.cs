@@ -18,5 +18,8 @@ namespace WebSite.Web.Model
         [StringLength(50)]
         public string city { get; set; }
         public DateTime birthDay { get; set; }
+        public string email { get; set; }
+        public string telephone { get; set; }
+        public string about { get; set; }
     }
 }

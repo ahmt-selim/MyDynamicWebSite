@@ -63,6 +63,9 @@ namespace WebSite.Web.Controllers
             myinfo.city = result["city"].ToString();
             myinfo.id = int.Parse(result["id"].ToString());
             myinfo.birthDay = DateTime.Parse(result["birthDay"].ToString());
+            myinfo.about = result["about"].ToString();
+            myinfo.email = result["email"].ToString();
+            myinfo.telephone = result["telephone"].ToString();
 
             List<string> skill_names= new List<string>();
             foreach (var item in myinfoskills)
